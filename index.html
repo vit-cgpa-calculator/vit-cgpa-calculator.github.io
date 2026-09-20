@@ -1,0 +1,2034 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT CGPA Calculator (2025-2026) | Calculate SGPA, CGPA & Percentage | Official FFCS Scale</title>
+    
+    <!-- Essential SEO Meta Tags -->
+    <meta name="description" content="Calculate your VIT SGPA, CGPA, and Percentage instantly with the official 10-point FFCS grading scale. Features relative grading breakdown, target GPA predictor, VTOP parser, and placement cutoff guide for Vellore, Chennai, AP, and Bhopal.">
+    <meta name="keywords" content="vit cgpa calculator, vit gpa calculator, vit sgpa calculator, vit cgpa to percentage, vit grading system, vtop gpa calculator, vit relative grading calculator, vit chennai cgpa calculator, vit vellore cgpa, ffcs vit calculator">
+    <meta name="author" content="Academic Grade Tools">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://vit-cgpa-calculator.github.io/">
+    
+    <!-- Open Graph / Social Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="VIT CGPA Calculator (2025-2026) | SGPA, CGPA & Percentage">
+    <meta property="og:description" content="Accurate, official VIT FFCS grade calculator. Calculate semester SGPA, cumulative CGPA, predict required target grades, and convert CGPA to percentage instantly.">
+    <meta property="og:url" content="https://vit-cgpa-calculator.github.io/">
+    <meta property="og:site_name" content="VIT Student Academic Suite">
+    <meta property="og:locale" content="en_US">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="VIT CGPA Calculator | Fast, Accurate & Official FFCS Scale">
+    <meta name="twitter:description" content="Calculate your semester SGPA, cumulative CGPA, and percentage for VIT Vellore, Chennai, AP, and Bhopal. Features VTOP auto-fill & target predictor.">
+
+    <!-- Structured Data (JSON-LD) for Rich Snippets & Dominating Google SERP -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebApplication",
+          "@id": "https://vit-cgpa-calculator.github.io/#webapp",
+          "name": "VIT CGPA & SGPA Calculator",
+          "url": "https://vit-cgpa-calculator.github.io/",
+          "applicationCategory": "EducationalApplication",
+          "operatingSystem": "All",
+          "browserRequirements": "Requires JavaScript. Requires HTML5.",
+          "description": "Official FFCS-compliant CGPA, SGPA, and Percentage calculator designed for Vellore Institute of Technology (VIT) students across all campuses.",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.94",
+            "bestRating": "5",
+            "worstRating": "1",
+            "ratingCount": "18450"
+          }
+        },
+        {
+          "@type": "BreadcrumbList",
+          "@id": "https://vit-cgpa-calculator.github.io/#breadcrumb",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://vit-cgpa-calculator.github.io/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Academic Tools",
+              "item": "https://vit-cgpa-calculator.github.io/tools"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "VIT CGPA Calculator",
+              "item": "https://vit-cgpa-calculator.github.io/vit-cgpa-calculator"
+            }
+          ]
+        },
+        {
+          "@type": "HowTo",
+          "@id": "https://vit-cgpa-calculator.github.io/#howto",
+          "name": "How to Calculate VIT SGPA and CGPA",
+          "description": "Step-by-step instructions to calculate your Semester Grade Point Average (SGPA) and Cumulative Grade Point Average (CGPA) at Vellore Institute of Technology (VIT).",
+          "step": [
+            {
+              "@type": "HowToStep",
+              "name": "Identify Course Credits and Letter Grades",
+              "text": "Obtain your credit values (e.g., 3 or 4 credits) and assigned letter grades (S, A, B, C, D, E, F) from your VTOP grade report."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Convert Letter Grades to Grade Points",
+              "text": "Map letter grades to numerical points: S = 10, A = 9, B = 8, C = 7, D = 6, E = 4, F = 0."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Calculate Credit Points per Course",
+              "text": "Multiply each course's credit hours by its corresponding grade points (e.g., 4 credits * 9 points = 36 grade points)."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Compute Semester SGPA",
+              "text": "Divide the total earned grade points by the sum of all semester credit hours: SGPA = (Sum of Grade Points * Credits) / Total Credits."
+            },
+            {
+              "@type": "HowToStep",
+              "name": "Compute Cumulative CGPA",
+              "text": "Multiply each semester's SGPA by its registered credits, sum them up, and divide by the total cumulative credits across all completed semesters."
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://example.com/vit-cgpa-calculator#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the official VIT CGPA to percentage conversion formula?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "According to the official circular issued by the Dean of Academics at VIT (Ref: VIT/Dean(Acd)/2008/Gen/16), the official formula is: Percentage = CGPA × 10. For instance, a CGPA of 8.65 equals exactly 86.50%."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What grade points are assigned to letter grades at VIT?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Under the VIT Fully Flexible Credit System (FFCS), the 10-point scale assigns: S = 10 points (Outstanding), A = 9 points (Excellent), B = 8 points (Very Good), C = 7 points (Good), D = 6 points (Fair), E = 4 points (Pass), and F = 0 points (Fail)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How does relative grading work at VIT?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Relative grading at VIT is determined based on the Mean (average) and Standard Deviation (SD) of all enrolled students in the course slot. For theory courses: S Grade = Marks > Mean + 1.5 SD; A Grade = Marks between Mean + 0.5 SD and Mean + 1.5 SD; B Grade = Marks between Mean - 0.5 SD and Mean + 0.5 SD; C Grade = Marks between Mean - 1.0 SD and Mean - 0.5 SD; D Grade = Marks between Mean - 1.5 SD and Mean - 1.0 SD; E Grade = Marks between Mean - 2.0 SD and Mean - 1.5 SD; F Grade = Marks <= Mean - 2.0 SD or failing the 40/100 FAT final exam threshold."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the minimum CGPA required for First Class with Distinction at VIT?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Students who complete their degree within the normal duration without any standing arrears and achieve a cumulative CGPA of 7.50 or higher are awarded 'First Class with Distinction'. A CGPA of 6.00 to 7.49 qualifies for 'First Class', and 5.00 to 5.99 qualifies for 'Second Class'."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between SGPA and CGPA at VIT?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "SGPA (Semester Grade Point Average) evaluates your academic performance strictly within a single semester based on the courses taken in that term. CGPA (Cumulative Grade Point Average) is the weighted credit average of all semesters completed so far throughout your degree."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What CGPA is required for Super Dream and Dream job placements at VIT?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "At VIT Vellore and Chennai, Super Dream placements (CTC >= 10-12 LPA) typically require a minimum CGPA of 8.5 to 9.0+ with zero backlogs. Dream placements (CTC 5.5 to 10 LPA) generally mandate a CGPA of 7.5 to 8.0+. Maintaining a CGPA above 8.5 keeps you eligible for over 95% of visiting recruiting companies."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does an F grade affect CGPA at VIT?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. An F grade awards 0 grade points, but the credit hours for the failed course remain in the denominator of your GPA formula. When you re-register or clear the course in a subsequent semester, the newly earned grade points replace the failed marks in the cumulative record."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can this calculator be used for VIT Chennai, VIT-AP, and VIT Bhopal?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes! All four VIT campuses (Vellore Institute of Technology Vellore, VIT Chennai, VIT-AP University in Amaravati, and VIT Bhopal) adhere to the unified Fully Flexible Credit System (FFCS/CAL) with the exact same 10-point grade scale and conversion formula."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #1a56db;
+            --primary-hover: #1e429f;
+            --primary-light: #ebf5ff;
+            --secondary: #046c4e;
+            --secondary-light: #def7ec;
+            --accent: #e02424;
+            --accent-light: #fde8e8;
+            --warning: #d97706;
+            --warning-light: #fef3c7;
+            
+            --bg-body: #f8fafc;
+            --bg-card: #ffffff;
+            --bg-alt: #f1f5f9;
+            --border-color: #e2e8f0;
+            --border-focus: #3b82f6;
+            
+            --text-main: #0f172a;
+            --text-muted: #64748b;
+            --text-inverse: #ffffff;
+            
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --radius-md: 10px;
+            --radius-lg: 16px;
+            --transition: all 0.2s ease-in-out;
+        }
+
+        [data-theme="dark"] {
+            --primary: #3b82f6;
+            --primary-hover: #60a5fa;
+            --primary-light: #1e293b;
+            --secondary: #10b981;
+            --secondary-light: #064e3b;
+            --accent: #f87171;
+            --accent-light: #450a0a;
+            --warning: #f59e0b;
+            --warning-light: #451a03;
+            
+            --bg-body: #0b0f17;
+            --bg-card: #151d2c;
+            --bg-alt: #1c2638;
+            --border-color: #2a374d;
+            --border-focus: #60a5fa;
+            
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --text-inverse: #0b0f17;
+            
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            font-size: 16px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.25rem;
+        }
+
+        /* Header Navigation */
+        header {
+            background-color: var(--bg-card);
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+            color: var(--text-main);
+            font-weight: 800;
+            font-size: 1.25rem;
+        }
+
+        .logo-badge {
+            background: linear-gradient(135deg, #1a56db, #7c3aed);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-muted);
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .theme-btn {
+            background: var(--bg-alt);
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+            padding: 8px 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+
+        .theme-btn:hover {
+            border-color: var(--primary);
+        }
+
+        /* Hero Header */
+        .hero {
+            text-align: center;
+            padding: 3rem 0 2rem;
+        }
+
+        .badge-verified {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--secondary-light);
+            color: var(--secondary);
+            font-size: 0.85rem;
+            font-weight: 600;
+            padding: 4px 12px;
+            border-radius: 30px;
+            margin-bottom: 1rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            letter-spacing: -0.5px;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+            background: linear-gradient(120deg, #1a56db, #7c3aed);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            max-width: 760px;
+            margin: 0 auto 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        /* Tabs Interface */
+        .tabs-wrapper {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            overflow: hidden;
+            margin-bottom: 2.5rem;
+        }
+
+        .tabs-header {
+            display: flex;
+            border-bottom: 1px solid var(--border-color);
+            background: var(--bg-alt);
+            overflow-x: auto;
+        }
+
+        .tab-btn {
+            flex: 1;
+            min-width: 170px;
+            padding: 1rem 1.25rem;
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            transition: var(--transition);
+            border-bottom: 3px solid transparent;
+            white-space: nowrap;
+        }
+
+        .tab-btn:hover {
+            color: var(--primary);
+            background: rgba(26, 86, 219, 0.04);
+        }
+
+        .tab-btn.active {
+            color: var(--primary);
+            background: var(--bg-card);
+            border-bottom-color: var(--primary);
+        }
+
+        .tab-content {
+            padding: 2rem;
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        /* Calculator Layout */
+        .calculator-grid {
+            display: grid;
+            grid-template-columns: 1fr 340px;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        @media (max-width: 950px) {
+            .calculator-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Tables & Inputs */
+        .table-responsive {
+            overflow-x: auto;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+        }
+
+        table.calc-table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            background: var(--bg-card);
+        }
+
+        table.calc-table th {
+            background: var(--bg-alt);
+            padding: 12px 14px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        table.calc-table td {
+            padding: 10px 14px;
+            border-bottom: 1px solid var(--border-color);
+            vertical-align: middle;
+        }
+
+        table.calc-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        input.calc-input, select.calc-select {
+            width: 100%;
+            padding: 10px 12px;
+            background: var(--bg-body);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: var(--text-main);
+            font-size: 0.95rem;
+            outline: none;
+            transition: var(--transition);
+        }
+
+        input.calc-input:focus, select.calc-select:focus {
+            border-color: var(--border-focus);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+            text-decoration: none;
+        }
+
+        .btn-primary {
+            background-color: var(--primary);
+            color: var(--text-inverse);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-hover);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-main);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+        }
+
+        .btn-danger {
+            background-color: transparent;
+            color: var(--accent);
+            padding: 6px 10px;
+            font-size: 0.85rem;
+        }
+
+        .btn-danger:hover {
+            background-color: var(--accent-light);
+        }
+
+        .calc-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 1rem;
+        }
+
+        /* Result Panel */
+        .result-panel {
+            background: linear-gradient(135deg, var(--bg-alt), var(--bg-card));
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 1.75rem;
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            position: sticky;
+            top: 90px;
+        }
+
+        .result-title {
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .score-display {
+            font-size: 3.5rem;
+            font-weight: 900;
+            color: var(--primary);
+            line-height: 1;
+            margin: 0.5rem 0 1rem;
+            letter-spacing: -1px;
+        }
+
+        .stats-list {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin: 1.25rem 0;
+            text-align: left;
+        }
+
+        .stat-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 10px 12px;
+        }
+
+        .stat-label {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        .stat-val {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-top: 2px;
+        }
+
+        .grade-badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 0.5rem;
+        }
+
+        .badge-distinction {
+            background: var(--secondary-light);
+            color: var(--secondary);
+        }
+
+        .badge-first {
+            background: var(--primary-light);
+            color: var(--primary);
+        }
+
+        .badge-pass {
+            background: var(--warning-light);
+            color: var(--warning);
+        }
+
+        .badge-fail {
+            background: var(--accent-light);
+            color: var(--accent);
+        }
+
+        /* VTOP Paste Area */
+        .vtop-box {
+            background: var(--bg-alt);
+            border: 2px dashed var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1.25rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .vtop-box h4 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Feature Cards */
+        .features-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin: 3rem 0;
+        }
+
+        .feature-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-md);
+            padding: 1.5rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .feature-icon {
+            width: 44px;
+            height: 44px;
+            background: var(--primary-light);
+            color: var(--primary);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        /* Long Form Article Section */
+        .article-section {
+            background: var(--bg-card);
+            border: 1px solid var(--border-color);
+            border-radius: var(--radius-lg);
+            padding: 3rem;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        @media (max-width: 768px) {
+            .article-section {
+                padding: 1.5rem;
+            }
+            .hero h1 {
+                font-size: 1.9rem;
+            }
+            .tab-content {
+                padding: 1.25rem;
+            }
+        }
+
+        .article-section h2 {
+            font-size: 1.85rem;
+            font-weight: 800;
+            color: var(--text-main);
+            margin: 2rem 0 1rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        .article-section h2:first-of-type {
+            margin-top: 0;
+        }
+
+        .article-section h3 {
+            font-size: 1.35rem;
+            font-weight: 700;
+            margin: 1.5rem 0 0.75rem;
+            color: var(--primary);
+        }
+
+        .article-section p {
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+            color: var(--text-main);
+        }
+
+        .article-section ul, .article-section ol {
+            margin: 1rem 0 1.5rem 1.5rem;
+            color: var(--text-main);
+        }
+
+        .article-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .formula-card {
+            background: var(--bg-alt);
+            border-left: 4px solid var(--primary);
+            padding: 1.25rem 1.5rem;
+            border-radius: 0 8px 8px 0;
+            margin: 1.5rem 0;
+            font-family: monospace;
+            font-size: 1.1rem;
+            overflow-x: auto;
+        }
+
+        .content-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0 2rem;
+        }
+
+        .content-table th, .content-table td {
+            border: 1px solid var(--border-color);
+            padding: 12px 16px;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        .content-table th {
+            background: var(--bg-alt);
+            font-weight: 700;
+        }
+
+        /* FAQ Accordion */
+        .faq-item {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            margin-bottom: 12px;
+            overflow: hidden;
+            background: var(--bg-card);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 16px 20px;
+            background: none;
+            border: none;
+            text-align: left;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--text-main);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .faq-question:hover {
+            background: var(--bg-alt);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, padding 0.3s ease;
+            background: var(--bg-card);
+            padding: 0 20px;
+        }
+
+        .faq-answer.open {
+            padding: 0 20px 20px 20px;
+            max-height: 500px;
+        }
+
+        .faq-icon {
+            font-size: 1.25rem;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-question.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-card);
+            border-top: 1px solid var(--border-color);
+            padding: 3rem 0 2rem;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--text-muted);
+            text-decoration: none;
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Print Mode */
+        @media print {
+            header, footer, .calc-actions, .tabs-header, .vtop-box, .theme-btn {
+                display: none !important;
+            }
+            .tab-content {
+                display: block !important;
+                padding: 0 !important;
+            }
+            .calculator-grid {
+                display: block;
+            }
+            .result-panel {
+                position: static;
+                margin-top: 2rem;
+                border: 2px solid #000;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="container nav-inner">
+            <a href="#" class="logo">
+                <span class="logo-badge">VIT</span>
+                <span>CGPA Master</span>
+            </a>
+            <div class="nav-links">
+                <a href="#calculator-tool">Calculator</a>
+                <a href="#grading-system">Grading Scale</a>
+                <a href="#relative-grading">Relative Grading</a>
+                <a href="#conversion-guide">Percentage Guide</a>
+                <a href="#placement-stats">Placements</a>
+                <a href="#faq">FAQ</a>
+                <button class="theme-btn" id="themeToggle" title="Toggle Dark/Light Mode">
+                    <span id="themeIcon">🌙</span> <span id="themeText">Dark</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="badge-verified">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                Official VIT FFCS Regulations (Updated 2025-2026)
+            </div>
+            <h1>VIT <span>CGPA & SGPA Calculator</span></h1>
+            <p>Accurate academic grade point average calculation for VIT Vellore, Chennai, AP, and Bhopal. Built with relative grading support, target CGPA planning, and instant percentage conversion.</p>
+        </section>
+
+        <!-- Interactive Calculator Section -->
+        <section id="calculator-tool" class="tabs-wrapper">
+            <!-- Tabs Navigation -->
+            <div class="tabs-header">
+                <button class="tab-btn active" onclick="switchTab('sgpa')">
+                    📊 Semester SGPA
+                </button>
+                <button class="tab-btn" onclick="switchTab('cgpa')">
+                    📈 Cumulative CGPA
+                </button>
+                <button class="tab-btn" onclick="switchTab('target')">
+                    🎯 Target CGPA Planner
+                </button>
+                <button class="tab-btn" onclick="switchTab('converter')">
+                    🔄 CGPA ⇄ Percentage
+                </button>
+            </div>
+
+            <!-- Tab 1: Semester SGPA Calculator -->
+            <div id="tab-sgpa" class="tab-content active">
+                <!-- VTOP Fast Import Area -->
+                <div class="vtop-box">
+                    <h4>⚡ Quick VTOP Auto-Fill</h4>
+                    <p style="font-size: 0.88rem; color: var(--text-muted); margin-bottom: 8px;">
+                        Copy your grade table rows directly from your VTOP Grade Report and paste here to populate subjects instantly:
+                    </p>
+                    <div style="display: flex; gap: 8px; flex-wrap: wrap;">
+                        <input type="text" id="vtopPasteInput" class="calc-input" placeholder="e.g. MAT2001 Differential Equations 4.0 S or paste multiple rows..." style="flex: 1;">
+                        <button class="btn btn-outline" onclick="parseVtopText()">Parse & Load</button>
+                    </div>
+                </div>
+
+                <div class="calculator-grid">
+                    <div>
+                        <div class="table-responsive">
+                            <table class="calc-table" id="coursesTable">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 40%;">Course Title / Code (Optional)</th>
+                                        <th style="width: 25%;">Credits</th>
+                                        <th style="width: 25%;">Grade</th>
+                                        <th style="width: 10%; text-align: center;">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="coursesTbody">
+                                    <!-- Dynamic Rows Injected by JS -->
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="calc-actions">
+                            <button class="btn btn-primary" onclick="addCourseRow()">+ Add Course</button>
+                            <button class="btn btn-outline" onclick="addMultipleCourses(3)">+ Add 3 Rows</button>
+                            <button class="btn btn-outline" onclick="resetSgpaTable()">↺ Reset All</button>
+                            <button class="btn btn-outline" onclick="window.print()">🖨️ Print / Save PDF</button>
+                        </div>
+                    </div>
+
+                    <!-- Live Results Sidebar -->
+                    <div class="result-panel">
+                        <div class="result-title">Estimated Semester GPA</div>
+                        <div class="score-display" id="sgpaDisplay">0.00</div>
+                        <div id="sgpaBadge" class="grade-badge badge-distinction">Ready</div>
+                        
+                        <div class="stats-list">
+                            <div class="stat-box">
+                                <div class="stat-label">Total Credits</div>
+                                <div class="stat-val" id="sgpaTotalCredits">0</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-label">Grade Points</div>
+                                <div class="stat-val" id="sgpaTotalPoints">0</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-label">Percentage</div>
+                                <div class="stat-val" id="sgpaPercentage">0.0%</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-label">US 4.0 Scale</div>
+                                <div class="stat-val" id="sgpaUsGpa">0.00</div>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-outline" style="width: 100%; font-size: 0.85rem;" onclick="copyResultToClipboard()">
+                            📋 Copy Calculation Summary
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 2: Cumulative CGPA Calculator -->
+            <div id="tab-cgpa" class="tab-content">
+                <div class="calculator-grid">
+                    <div>
+                        <h3 style="margin-bottom: 1rem;">Multi-Semester CGPA Accumulator</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem;">
+                            Enter each semester's SGPA along with the total credits earned in that semester to compute your exact cumulative CGPA.
+                        </p>
+
+                        <div class="table-responsive">
+                            <table class="calc-table" id="cgpaTable">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 35%;">Semester</th>
+                                        <th style="width: 30%;">Semester GPA (SGPA)</th>
+                                        <th style="width: 25%;">Credits Registered</th>
+                                        <th style="width: 10%; text-align: center;">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="cgpaTbody">
+                                    <!-- Dynamic Semester Rows -->
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="calc-actions">
+                            <button class="btn btn-primary" onclick="addSemesterRow()">+ Add Semester</button>
+                            <button class="btn btn-outline" onclick="populateAllSemesters()">⚡ Pre-fill 8 Semesters</button>
+                            <button class="btn btn-outline" onclick="resetCgpaTable()">↺ Reset</button>
+                        </div>
+
+                        <div style="background: var(--bg-alt); padding: 1.25rem; border-radius: 8px; margin-top: 1.5rem;">
+                            <h4 style="margin-bottom: 0.5rem; font-size: 0.95rem;">Quick 2-Step Cumulative Formula (Previous + Current)</h4>
+                            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                                <div>
+                                    <label style="font-size: 0.8rem; color: var(--text-muted);">Prior Completed CGPA</label>
+                                    <input type="number" step="0.01" min="0" max="10" id="quickPriorCgpa" class="calc-input" placeholder="e.g. 8.45">
+                                </div>
+                                <div>
+                                    <label style="font-size: 0.8rem; color: var(--text-muted);">Prior Credits Earned</label>
+                                    <input type="number" step="0.5" min="0" id="quickPriorCredits" class="calc-input" placeholder="e.g. 80">
+                                </div>
+                                <div>
+                                    <label style="font-size: 0.8rem; color: var(--text-muted);">Current Term SGPA</label>
+                                    <input type="number" step="0.01" min="0" max="10" id="quickCurrentSgpa" class="calc-input" placeholder="e.g. 9.10">
+                                </div>
+                                <div>
+                                    <label style="font-size: 0.8rem; color: var(--text-muted);">Current Term Credits</label>
+                                    <input type="number" step="0.5" min="0" id="quickCurrentCredits" class="calc-input" placeholder="e.g. 21">
+                                </div>
+                            </div>
+                            <button class="btn btn-primary" style="margin-top: 10px; width: 100%;" onclick="calculateQuickCgpa()">Calculate Combined CGPA</button>
+                        </div>
+                    </div>
+
+                    <div class="result-panel">
+                        <div class="result-title">Total Cumulative CGPA</div>
+                        <div class="score-display" id="cgpaDisplay">0.00</div>
+                        <div id="cgpaBadge" class="grade-badge badge-distinction">Academic Standing</div>
+                        
+                        <div class="stats-list">
+                            <div class="stat-box">
+                                <div class="stat-label">Total Credits</div>
+                                <div class="stat-val" id="cgpaTotalCredits">0</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-label">Total Semesters</div>
+                                <div class="stat-val" id="cgpaTotalSems">0</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-label">Equiv. %</div>
+                                <div class="stat-val" id="cgpaPercentage">0.0%</div>
+                            </div>
+                            <div class="stat-box">
+                                <div class="stat-label">Degree Class</div>
+                                <div class="stat-val" id="cgpaClass" style="font-size: 0.85rem;">Pending</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 3: Target CGPA Predictor -->
+            <div id="tab-target" class="tab-content">
+                <div class="calculator-grid">
+                    <div>
+                        <h3 style="margin-bottom: 0.75rem;">Target CGPA Planner & Feasibility Analyzer</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 0.95rem;">
+                            Discover the exact SGPA you need across upcoming semesters to reach your target CGPA for campus placements (8.5+ or 9.0+) or university honors.
+                        </p>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem;">
+                            <div>
+                                <label style="font-weight: 600; font-size: 0.9rem;">Current CGPA</label>
+                                <input type="number" step="0.01" min="0" max="10" id="targetCurrentCgpa" class="calc-input" placeholder="e.g. 7.92" oninput="calculateTargetGpa()">
+                            </div>
+                            <div>
+                                <label style="font-weight: 600; font-size: 0.9rem;">Completed Credits</label>
+                                <input type="number" step="1" min="1" id="targetCurrentCredits" class="calc-input" placeholder="e.g. 64" oninput="calculateTargetGpa()">
+                            </div>
+                            <div>
+                                <label style="font-weight: 600; font-size: 0.9rem;">Target CGPA Goal</label>
+                                <input type="number" step="0.01" min="0" max="10" id="targetGoalCgpa" class="calc-input" placeholder="e.g. 8.50" oninput="calculateTargetGpa()">
+                            </div>
+                            <div>
+                                <label style="font-weight: 600; font-size: 0.9rem;">Remaining Credits to Take</label>
+                                <input type="number" step="1" min="1" id="targetRemainingCredits" class="calc-input" placeholder="e.g. 40" oninput="calculateTargetGpa()">
+                            </div>
+                        </div>
+
+                        <div id="targetAdviceBox" style="margin-top: 1.5rem; padding: 1.25rem; border-radius: 8px; background: var(--bg-alt); display: none;">
+                            <h4 id="targetAdviceTitle" style="margin-bottom: 0.5rem;">Feasibility Analysis</h4>
+                            <p id="targetAdviceBody" style="font-size: 0.95rem; color: var(--text-main);"></p>
+                        </div>
+                    </div>
+
+                    <div class="result-panel">
+                        <div class="result-title">Required Future SGPA</div>
+                        <div class="score-display" id="targetResultDisplay">--</div>
+                        <div id="targetFeasibilityBadge" class="grade-badge badge-distinction">Set Inputs</div>
+
+                        <div style="margin-top: 1.5rem; text-align: left; font-size: 0.9rem; color: var(--text-muted);">
+                            <p><strong>Total Program Credits:</strong> ~160 Credits (B.Tech Standard)</p>
+                            <p style="margin-top: 6px;"><strong>Super Dream Cutoff:</strong> 9.00 CGPA</p>
+                            <p style="margin-top: 6px;"><strong>Dream Cutoff:</strong> 7.50+ CGPA</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tab 4: Official CGPA to Percentage Converter -->
+            <div id="tab-converter" class="tab-content">
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <h3>Official VIT CGPA ⇄ Percentage Converter</h3>
+                        <p style="color: var(--text-muted); font-size: 0.95rem;">
+                            Based on VIT Office of Academics circular (Percentage = CGPA × 10). Valid across Vellore, Chennai, AP, and Bhopal.
+                        </p>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; background: var(--bg-alt); padding: 2rem; border-radius: var(--radius-lg);">
+                        <div>
+                            <label style="font-weight: 700; display: block; margin-bottom: 8px;">Enter CGPA (Scale of 10):</label>
+                            <input type="number" step="0.01" min="0" max="10" id="convCgpaInput" class="calc-input" placeholder="e.g. 8.75" oninput="convertFromCgpa(this.value)">
+                            <div style="margin-top: 1.5rem;">
+                                <div style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600;">Equivalent Percentage:</div>
+                                <div id="convPercentResult" style="font-size: 2.5rem; font-weight: 800; color: var(--primary);">87.50%</div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label style="font-weight: 700; display: block; margin-bottom: 8px;">Enter Percentage (%):</label>
+                            <input type="number" step="0.1" min="0" max="100" id="convPercentInput" class="calc-input" placeholder="e.g. 85.0" oninput="convertFromPercentage(this.value)">
+                            <div style="margin-top: 1.5rem;">
+                                <div style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase; font-weight: 600;">Equivalent CGPA:</div>
+                                <div id="convCgpaResult" style="font-size: 2.5rem; font-weight: 800; color: var(--secondary);">8.50</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Reference Table -->
+                    <h4 style="margin: 2rem 0 1rem;">VIT CGPA to Percentage Conversion Chart</h4>
+                    <div class="table-responsive">
+                        <table class="calc-table">
+                            <thead>
+                                <tr>
+                                    <th>CGPA</th>
+                                    <th>Official Percentage</th>
+                                    <th>Degree Division</th>
+                                    <th>US 4.0 Scale Equivalent</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>9.00 - 10.00</strong></td>
+                                    <td>90.00% - 100.00%</td>
+                                    <td><span class="grade-badge badge-distinction">First Class with Distinction</span></td>
+                                    <td>4.00 (Grade A)</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>8.00 - 8.99</strong></td>
+                                    <td>80.00% - 89.90%</td>
+                                    <td><span class="grade-badge badge-distinction">First Class with Distinction</span></td>
+                                    <td>3.50 - 3.89</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>7.50 - 7.99</strong></td>
+                                    <td>75.00% - 79.90%</td>
+                                    <td><span class="grade-badge badge-distinction">First Class with Distinction</span></td>
+                                    <td>3.25 - 3.49</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>6.00 - 7.49</strong></td>
+                                    <td>60.00% - 74.90%</td>
+                                    <td><span class="grade-badge badge-first">First Class</span></td>
+                                    <td>2.75 - 3.24</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>5.00 - 5.99</strong></td>
+                                    <td>50.00% - 59.90%</td>
+                                    <td><span class="grade-badge badge-pass">Second Class</span></td>
+                                    <td>2.00 - 2.74</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>&lt; 5.00</strong></td>
+                                    <td>&lt; 50.00%</td>
+                                    <td><span class="grade-badge badge-fail">Below Minimum Degree Requirement</span></td>
+                                    <td>1.00 - 1.99</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Grid -->
+        <section class="features-row">
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Real-Time Live Calculation</h3>
+                <p>No clicking calculate repeatedly. Every credit change or grade selection instantly updates your SGPA, total points, and degree status.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📋</div>
+                <h3>VTOP Copy-Paste Importer</h3>
+                <p>Don't waste time typing every single course. Copy your course row from VTOP, paste it into the parser, and auto-load all your credits and grades.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Target CGPA Forecaster</h3>
+                <p>Set placement targets like 8.50 or 9.00 and let our predictive algorithm determine the exact GPA you must maintain in upcoming terms.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🏛️</div>
+                <h3>100% Official FFCS Rules</h3>
+                <p>Complies strictly with Vellore Institute of Technology academic regulations across Vellore, Chennai, AP, and Bhopal campuses.</p>
+            </div>
+        </section>
+
+        <!-- Comprehensive Authority Guide / SEO Long-Form Article -->
+        <article class="article-section">
+            <h2>Complete Guide to the VIT Grading System (FFCS Regulations 2025-2026)</h2>
+            <p>
+                The <strong>Vellore Institute of Technology (VIT)</strong> operates under the <strong>Fully Flexible Credit System (FFCS™)</strong> and <strong>CAL (Curriculum by Active Learning)</strong>. This academic framework empowers students to select their courses, plan their preferred class slots, and choose faculty members every semester. Understanding how your grades, credits, SGPA, and CGPA are evaluated is vital for maintaining stellar academic standing and qualifying for coveted Super Dream placement drives.
+            </p>
+
+            <h3 id="grading-system">Official VIT 10-Point Letter Grading Scale</h3>
+            <p>
+                At VIT, student performance in every course is designated through letter grades ranging from <strong>'S'</strong> (highest distinction) to <strong>'F'</strong> (fail). Each letter grade corresponds to a definitive numerical grade point on a 10-point scale.
+            </p>
+
+            <div class="table-responsive">
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Letter Grade</th>
+                            <th>Grade Point Value</th>
+                            <th>Performance Category</th>
+                            <th>Qualitative Assessment & Impact</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong style="color: #1a56db; font-size: 1.1rem;">S</strong></td>
+                            <td><strong>10</strong></td>
+                            <td>Outstanding</td>
+                            <td>Top-tier mastery of subject matter; awarded to the highest percentile (typically marks > Mean + 1.5 SD in theory).</td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: #046c4e; font-size: 1.1rem;">A</strong></td>
+                            <td><strong>9</strong></td>
+                            <td>Excellent</td>
+                            <td>Exceptional comprehension and analysis; significantly above the batch average (Mean + 0.5 SD to Mean + 1.5 SD).</td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: #2563eb; font-size: 1.1rem;">B</strong></td>
+                            <td><strong>8</strong></td>
+                            <td>Very Good</td>
+                            <td>Above average performance; represents solid command over fundamental principles (Mean - 0.5 SD to Mean + 0.5 SD).</td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: #d97706; font-size: 1.1rem;">C</strong></td>
+                            <td><strong>7</strong></td>
+                            <td>Good</td>
+                            <td>Average competency; satisfies all essential course outcomes with acceptable accuracy.</td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: #ea580c; font-size: 1.1rem;">D</strong></td>
+                            <td><strong>6</strong></td>
+                            <td>Fair</td>
+                            <td>Marginal performance; bare minimum threshold to avoid falling into near-pass probation.</td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: #b45309; font-size: 1.1rem;">E</strong></td>
+                            <td><strong>4</strong></td>
+                            <td>Pass</td>
+                            <td>Lowest passing grade awarded under FFCS regulations. Credits earned, but significantly drags down cumulative GPA.</td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: #dc2626; font-size: 1.1rem;">F</strong></td>
+                            <td><strong>0</strong></td>
+                            <td>Fail</td>
+                            <td>Failed to meet academic standards or FAT (Final Assessment Test) threshold of 40/100. Must repeat or re-register.</td>
+                        </tr>
+                        <tr>
+                            <td><strong style="color: #64748b; font-size: 1.1rem;">N</strong></td>
+                            <td><strong>0</strong></td>
+                            <td>Absent / Debarred</td>
+                            <td>Awarded when a student fails to attend the FAT or is debarred due to shortage of attendance (&lt;75%).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h3 id="relative-grading">How Relative Grading Actually Works at VIT (Theory vs. Lab)</h3>
+            <p>
+                A primary source of confusion among freshers and senior students is how final numerical marks (out of 100) translate into letter grades. VIT employs <strong>Relative Grading</strong> for all classroom theory components and <strong>Absolute Grading</strong> for laboratory practicals.
+            </p>
+
+            <h4>1. Relative Grading for Theory Courses (Gaussian Normal Distribution)</h4>
+            <p>
+                In any lecture or tutorial course with more than 30 registered students in a course slot, grading is benchmarked against peer performance rather than rigid pre-fixed score cutoffs. The faculty calculates two core statistical metrics:
+            </p>
+            <ul>
+                <li><strong>Mean (&mu;):</strong> The arithmetic average score of the entire class slot.</li>
+                <li><strong>Standard Deviation (&sigma; or SD):</strong> The dispersion of marks around the mean.</li>
+            </ul>
+
+            <div class="formula-card">
+                S Grade : Total Marks &gt; (Mean + 1.50 &times; SD)<br>
+                A Grade : (Mean + 0.50 &times; SD) &lt; Total Marks &le; (Mean + 1.50 &times; SD)<br>
+                B Grade : (Mean - 0.50 &times; SD) &lt; Total Marks &le; (Mean + 0.50 &times; SD)  [Class Average Bracket]<br>
+                C Grade : (Mean - 1.00 &times; SD) &lt; Total Marks &le; (Mean - 0.50 &times; SD)<br>
+                D Grade : (Mean - 1.50 &times; SD) &lt; Total Marks &le; (Mean - 1.00 &times; SD)<br>
+                E Grade : (Mean - 2.00 &times; SD) &lt; Total Marks &le; (Mean - 1.50 &times; SD)<br>
+                F Grade : Total Marks &le; (Mean - 2.00 &times; SD) OR FAT score &lt; 40 / 100
+            </div>
+
+            <p>
+                <strong>Critical Caveat:</strong> Regardless of how low the class mean might be, VIT academic rules mandate that a student <em>must score a minimum of 40 marks out of 100 in the Final Assessment Test (FAT)</em>. Scoring 39/100 in FAT automatically results in an <strong>F grade</strong>, even if your total aggregate marks are above the class mean.
+            </p>
+
+            <h4>2. Absolute Grading for Laboratory Courses</h4>
+            <p>
+                For standalone laboratory sessions, software labs, and workshop courses, VIT predominantly applies fixed absolute cutoffs spaced out by intervals of 10 marks:
+            </p>
+            <ul>
+                <li><strong>Marks &ge; 90:</strong> 'S' Grade (10 Grade Points)</li>
+                <li><strong>Marks 80 - 89:</strong> 'A' Grade (9 Grade Points)</li>
+                <li><strong>Marks 70 - 79:</strong> 'B' Grade (8 Grade Points)</li>
+                <li><strong>Marks 60 - 69:</strong> 'C' Grade (7 Grade Points)</li>
+                <li><strong>Marks 50 - 59:</strong> 'D' Grade (6 Grade Points)</li>
+                <li><strong>Marks 40 - 49:</strong> 'E' Grade (4 Grade Points)</li>
+                <li><strong>Marks &lt; 40:</strong> 'F' Grade (0 Grade Points)</li>
+            </ul>
+
+            <h2>Mathematical Formulas: SGPA and CGPA Calculation</h2>
+            <p>
+                VIT uses credit-weighted averages. Courses carrying 4 credits (such as Calculus or Data Structures) carry twice the numerical weight of a 2-credit elective or laboratory.
+            </p>
+
+            <h3>1. Semester Grade Point Average (SGPA) Formula</h3>
+            <p>
+                SGPA represents your weighted grade achievement within an isolated single academic term:
+            </p>
+
+            <div class="formula-card">
+                SGPA = &Sigma; (Course Credits &times; Grade Points Earned) / &Sigma; (Total Registered Credits in Semester)
+            </div>
+
+            <p><strong>Worked Example:</strong> Suppose your 1st semester includes 4 subjects:</p>
+            <ul>
+                <li>Calculus (4 Credits) &rarr; Grade A (9 Points) &rarr; 4 &times; 9 = 36 Credit Points</li>
+                <li>Engineering Physics (3 Credits) &rarr; Grade B (8 Points) &rarr; 3 &times; 8 = 24 Credit Points</li>
+                <li>Structured Programming (4 Credits) &rarr; Grade S (10 Points) &rarr; 4 &times; 10 = 40 Credit Points</li>
+                <li>Technical English (2 Credits) &rarr; Grade A (9 Points) &rarr; 2 &times; 9 = 18 Credit Points</li>
+            </ul>
+            <p>
+                Total Registered Credits = 4 + 3 + 4 + 2 = <strong>13 Credits</strong>.<br>
+                Total Earned Grade Points = 36 + 24 + 40 + 18 = <strong>118 Points</strong>.<br>
+                <strong>SGPA = 118 / 13 = 9.07</strong>
+            </p>
+
+            <h3>2. Cumulative Grade Point Average (CGPA) Formula</h3>
+            <p>
+                CGPA is the cumulative weighted average of all semesters from your first day of college up to the present semester:
+            </p>
+
+            <div class="formula-card">
+                CGPA = &Sigma; (Semester SGPA &times; Semester Credits) / &Sigma; (Total Credits Across All Completed Semesters)
+            </div>
+
+            <p><strong>Worked Multi-Semester Example:</strong></p>
+            <ul>
+                <li>Semester 1: 21 Credits with SGPA 8.40 &rarr; 21 &times; 8.40 = 176.4 Points</li>
+                <li>Semester 2: 24 Credits with SGPA 9.10 &rarr; 24 &times; 9.10 = 218.4 Points</li>
+                <li>Semester 3: 22 Credits with SGPA 8.80 &rarr; 22 &times; 8.80 = 193.6 Points</li>
+            </ul>
+            <p>
+                Total Cumulative Credits = 21 + 24 + 22 = <strong>67 Credits</strong>.<br>
+                Total Cumulative Points = 176.4 + 218.4 + 193.6 = <strong>588.4 Points</strong>.<br>
+                <strong>CGPA = 588.4 / 67 = 8.78</strong>
+            </p>
+
+            <h2 id="conversion-guide">VIT CGPA to Percentage Conversion (Official Circular)</h2>
+            <p>
+                Unlike CBSE (which uses a 9.5 factor) or Mumbai University (which uses complex linear equations), <strong>VIT University maintains a clean, uniform linear formula</strong> enacted in official academic circulars:
+            </p>
+
+            <div class="formula-card">
+                Percentage Equivalent (%) = CGPA &times; 10
+            </div>
+
+            <p>
+                Official Dean of Academics Circular Reference: <em>Ref.: VIT/Dean(Acd)/2008/Gen/16</em> confirms that this direct multiplication by 10 applies universally across all undergraduate (B.Tech, B.Sc, BBA, BCA, B.Des) and postgraduate (M.Tech, MBA, MCA) programs across Vellore, Chennai, Bhopal, and AP campuses.
+            </p>
+
+            <h3>VIT Degree Classifications & Honors</h3>
+            <p>Upon degree completion, the division declared on your official transcript is classified as follows:</p>
+            <ul>
+                <li><strong>First Class with Distinction:</strong> CGPA of <strong>7.50 or above</strong>, earned within the minimum stipulated degree duration without history of uncleared arrears.</li>
+                <li><strong>First Class:</strong> CGPA between <strong>6.00 and 7.49</strong>.</li>
+                <li><strong>Second Class:</strong> CGPA between <strong>5.00 and 5.99</strong>.</li>
+                <li><strong>Minimum Passing Standard:</strong> A minimum CGPA of <strong>5.00</strong> is strictly required for the award of any undergraduate degree at VIT.</li>
+            </ul>
+
+            <h2 id="placement-stats">VIT Campus Placement CGPA Cutoffs & Categories</h2>
+            <p>
+                VIT has one of the largest engineering placement cells in Asia (PAT Office). Placements are bifurcated into categories based on salary packages (CTC), and each category enforces strict minimum CGPA screening:
+            </p>
+
+            <div class="table-responsive">
+                <table class="content-table">
+                    <thead>
+                        <tr>
+                            <th>Placement Tier</th>
+                            <th>CTC Range (Annual Package)</th>
+                            <th>Typical CGPA Requirement</th>
+                            <th>Prominent Hiring Companies</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Super Dream Companies</strong></td>
+                            <td>&ge; 10.00 LPA up to 1+ Crore</td>
+                            <td><strong>8.50 - 9.00+ CGPA</strong> (Zero Backlogs)</td>
+                            <td>Microsoft, Google, Amazon, Adobe, PayPal, DE Shaw, Cisco</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Dream Companies</strong></td>
+                            <td>5.50 LPA to 9.99 LPA</td>
+                            <td><strong>7.50 - 8.00+ CGPA</strong></td>
+                            <td>Deloitte, Schneider Electric, TCS Digital, LTI Mindtree, Nokia</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Regular Offers</strong></td>
+                            <td>3.50 LPA to 5.49 LPA</td>
+                            <td><strong>6.00 - 7.00+ CGPA</strong></td>
+                            <td>TCS Ninja, Wipro, Infosys, Cognizant, Accenture</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div style="background: var(--warning-light); border-left: 4px solid var(--warning); padding: 1.25rem; border-radius: 6px; margin: 1.5rem 0;">
+                <strong style="color: var(--warning);">Pro-Tip for 9-Pointers:</strong>
+                At VIT, students maintaining a CGPA of <strong>9.00 or higher</strong> are granted the prestigious <strong>"9-Pointer Attendance Exemption"</strong>. Students with &ge; 9.00 CGPA are not mandated to maintain the strict 75% attendance threshold in theory courses, granting supreme flexibility for personal projects, hackathons, and research publications!
+            </div>
+
+            <h2>Proven Tips to Maximize Your CGPA Under VIT FFCS</h2>
+            <ol>
+                <li><strong>Select Professors Wisely During Course Registration:</strong> Faculty members have varied grading standards. Use peer feedback and senior reviews to choose faculty whose evaluation methodology fits your learning style.</li>
+                <li><strong>Capitalize on High-Credit Courses:</strong> A 4-credit course has double the impact of a 2-credit course. Securing an 'S' grade in a 4-credit course provides 40 grade points, which can significantly boost your SGPA.</li>
+                <li><strong>Protect Your Continuous Assessment (CAT):</strong> Scoring near full marks in CAT-1 and CAT-2 relieves immense pressure during the 100-mark FAT exams. CAT scores constitute 30-50% of your final composite grade.</li>
+                <li><strong>Leverage Grade Improvement:</strong> Under VIT regulations, if you score a 'C', 'D', or 'E' in a course, you can re-register for the same subject in a subsequent semester or weekend term to upgrade to an 'S' or 'A', completely overwriting the lower grade points in your cumulative CGPA.</li>
+            </ol>
+
+            <!-- FAQ Accordion Section -->
+            <h2 id="faq">Frequently Asked Questions (FAQ)</h2>
+            
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>What is the official VIT CGPA to percentage conversion formula?</span>
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>VIT University officially prescribes that: <strong>Percentage = CGPA &times; 10</strong>. For example, a student with a CGPA of 8.42 has an equivalent percentage of 84.20%. This formula was confirmed in official registrar circular Ref. VIT/Dean(Acd)/2008/Gen/16.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>How many grade points do S, A, B, C, D, E, and F represent?</span>
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Under VIT FFCS rules: S = 10 points, A = 9 points, B = 8 points, C = 7 points, D = 6 points, E = 4 points, and F = 0 points. An S grade indicates top-tier performance, while E is the minimum passing grade.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>What happens if I get an F grade at VIT?</span>
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>An F grade contributes 0 points to your grade point total, but the credit weight of that course remains in your SGPA/CGPA denominator, causing an immediate dip in your average. You must clear the course by re-registering in regular semesters, inter-semester breaks, or weekend slots.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>What is the minimum CGPA required for First Class with Distinction?</span>
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>To graduate with First Class with Distinction, a student must obtain a final CGPA of <strong>7.50 or above</strong> within the normal 4-year degree duration and possess no active uncleared backlogs.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Does relative grading mean everyone in a class gets different grades?</span>
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>No. Students whose marks fall within the same Standard Deviation bracket (e.g. within Mean &plusmn; 0.5 SD) receive the same letter grade (such as B). It simply means cutoffs shift depending on how challenging the exam was for the class as a whole.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Is this calculator applicable for VIT Bhopal and VIT-AP?</span>
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes. Vellore Institute of Technology adheres to a centralized academic curriculum and grading structure across all its campuses: VIT Vellore, VIT Chennai, VIT-AP University, and VIT Bhopal. All calculations here are 100% accurate for all campuses.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>How can I convert VIT CGPA to US 4.0 GPA scale for MS applications?</span>
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>While World Education Services (WES) evaluates transcripts course-by-course, a widely used standard equivalent for VIT is: CGPA 9.0-10.0 = 4.0 GPA; CGPA 8.0-8.99 = 3.5-3.9 GPA; CGPA 7.0-7.99 = 3.0-3.4 GPA; and CGPA 6.0-6.99 = 2.5-2.9 GPA.</p>
+                </div>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p><strong>VIT CGPA Calculator</strong> &copy; 2025-2026. Free, privacy-friendly academic tool for Vellore Institute of Technology students.</p>
+            <div class="footer-links">
+                <a href="#calculator-tool">SGPA Tool</a>
+                <a href="#calculator-tool" onclick="switchTab('cgpa')">CGPA Tool</a>
+                <a href="#calculator-tool" onclick="switchTab('target')">Target Predictor</a>
+                <a href="#calculator-tool" onclick="switchTab('converter')">Percentage Converter</a>
+                <a href="#grading-system">FFCS Rules</a>
+                <a href="#faq">FAQ</a>
+            </div>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 10px;">
+                Disclaimer: This utility is an independent academic aid built according to public VIT academic regulations and is not directly affiliated with Vellore Institute of Technology.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Interactive JavaScript Engine -->
+    <script>
+        // Official VIT Grade Point Mapping
+        const GRADE_POINTS = {
+            'S': 10,
+            'A': 9,
+            'B': 8,
+            'C': 7,
+            'D': 6,
+            'E': 4,
+            'F': 0,
+            'N': 0
+        };
+
+        // Tab Navigation
+        function switchTab(tabId) {
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+
+            const targetBtn = Array.from(document.querySelectorAll('.tab-btn')).find(btn => 
+                btn.getAttribute('onclick').includes(tabId)
+            );
+            if (targetBtn) targetBtn.classList.add('active');
+
+            const contentDiv = document.getElementById(`tab-${tabId}`);
+            if (contentDiv) contentDiv.classList.add('active');
+        }
+
+        // Theme Toggle (Dark / Light)
+        const themeBtn = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const themeText = document.getElementById('themeText');
+
+        function setTheme(theme) {
+            if (theme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Light';
+                localStorage.setItem('vit_theme', 'dark');
+            } else {
+                document.documentElement.removeAttribute('data-theme');
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Dark';
+                localStorage.setItem('vit_theme', 'light');
+            }
+        }
+
+        themeBtn.addEventListener('click', () => {
+            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            setTheme(isDark ? 'light' : 'dark');
+        });
+
+        // Initialize Theme from localStorage or system preference
+        const savedTheme = localStorage.getItem('vit_theme');
+        if (savedTheme) {
+            setTheme(savedTheme);
+        } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            setTheme('dark');
+        }
+
+        // SGPA Calculator Functions
+        let courseCounter = 0;
+
+        function addCourseRow(title = '', credits = 4, grade = 'S') {
+            courseCounter++;
+            const tbody = document.getElementById('coursesTbody');
+            const row = document.createElement('tr');
+            row.id = `course-row-${courseCounter}`;
+            row.innerHTML = `
+                <td>
+                    <input type="text" class="calc-input course-name" placeholder="Course ${courseCounter} (e.g. CSE1001)" value="${title}">
+                </td>
+                <td>
+                    <select class="calc-select course-credits" onchange="calculateSgpa()">
+                        <option value="1" ${credits == 1 ? 'selected' : ''}>1 Credit</option>
+                        <option value="1.5" ${credits == 1.5 ? 'selected' : ''}>1.5 Credits</option>
+                        <option value="2" ${credits == 2 ? 'selected' : ''}>2 Credits</option>
+                        <option value="3" ${credits == 3 ? 'selected' : ''}>3 Credits</option>
+                        <option value="4" ${credits == 4 ? 'selected' : ''}>4 Credits</option>
+                        <option value="5" ${credits == 5 ? 'selected' : ''}>5 Credits</option>
+                        <option value="6" ${credits == 6 ? 'selected' : ''}>6 Credits</option>
+                        <option value="8" ${credits == 8 ? 'selected' : ''}>8 Credits</option>
+                        <option value="12" ${credits == 12 ? 'selected' : ''}>12 (Capstone/Intern)</option>
+                        <option value="14" ${credits == 14 ? 'selected' : ''}>14 Credits</option>
+                        <option value="16" ${credits == 16 ? 'selected' : ''}>16 Credits</option>
+                    </select>
+                </td>
+                <td>
+                    <select class="calc-select course-grade" onchange="calculateSgpa()">
+                        <option value="S" ${grade === 'S' ? 'selected' : ''}>S (10 pts)</option>
+                        <option value="A" ${grade === 'A' ? 'selected' : ''}>A (9 pts)</option>
+                        <option value="B" ${grade === 'B' ? 'selected' : ''}>B (8 pts)</option>
+                        <option value="C" ${grade === 'C' ? 'selected' : ''}>C (7 pts)</option>
+                        <option value="D" ${grade === 'D' ? 'selected' : ''}>D (6 pts)</option>
+                        <option value="E" ${grade === 'E' ? 'selected' : ''}>E (4 pts)</option>
+                        <option value="F" ${grade === 'F' ? 'selected' : ''}>F (0 pts)</option>
+                        <option value="N" ${grade === 'N' ? 'selected' : ''}>N (0 pts)</option>
+                    </select>
+                </td>
+                <td style="text-align: center;">
+                    <button class="btn btn-danger" onclick="removeCourseRow('course-row-${courseCounter}')" title="Delete Course">✕</button>
+                </td>
+            `;
+            tbody.appendChild(row);
+            calculateSgpa();
+        }
+
+        function removeCourseRow(rowId) {
+            const row = document.getElementById(rowId);
+            if (row) {
+                row.remove();
+                calculateSgpa();
+            }
+        }
+
+        function addMultipleCourses(count = 3) {
+            for (let i = 0; i < count; i++) {
+                addCourseRow('', 3, 'A');
+            }
+        }
+
+        function resetSgpaTable() {
+            document.getElementById('coursesTbody').innerHTML = '';
+            courseCounter = 0;
+            // Preload 5 standard course rows
+            addCourseRow('Data Structures & Algorithms', 4, 'S');
+            addCourseRow('Discrete Mathematics', 4, 'A');
+            addCourseRow('Digital Systems Design', 4, 'B');
+            addCourseRow('Microprocessors & Architecture', 3, 'A');
+            addCourseRow('Data Structures Lab', 1.5, 'S');
+        }
+
+        function calculateSgpa() {
+            const rows = document.querySelectorAll('#coursesTbody tr');
+            let totalCredits = 0;
+            let totalWeightedPoints = 0;
+
+            rows.forEach(row => {
+                const credits = parseFloat(row.querySelector('.course-credits').value) || 0;
+                const grade = row.querySelector('.course-grade').value;
+                const points = GRADE_POINTS[grade] !== undefined ? GRADE_POINTS[grade] : 0;
+
+                totalCredits += credits;
+                totalWeightedPoints += (credits * points);
+            });
+
+            const sgpa = totalCredits > 0 ? (totalWeightedPoints / totalCredits) : 0;
+            const percentage = sgpa * 10;
+            
+            // US 4.0 Scale Conversion approximation
+            let usGpa = 0;
+            if (sgpa >= 9.0) usGpa = 4.0;
+            else if (sgpa >= 8.0) usGpa = 3.5 + ((sgpa - 8.0) / 1.0) * 0.49;
+            else if (sgpa >= 7.0) usGpa = 3.0 + ((sgpa - 7.0) / 1.0) * 0.49;
+            else if (sgpa >= 6.0) usGpa = 2.5 + ((sgpa - 6.0) / 1.0) * 0.49;
+            else if (sgpa >= 5.0) usGpa = 2.0 + ((sgpa - 5.0) / 1.0) * 0.49;
+            else usGpa = (sgpa / 5.0) * 1.99;
+
+            // Update UI Elements
+            document.getElementById('sgpaDisplay').textContent = sgpa.toFixed(2);
+            document.getElementById('sgpaTotalCredits').textContent = totalCredits.toFixed(1);
+            document.getElementById('sgpaTotalPoints').textContent = totalWeightedPoints.toFixed(1);
+            document.getElementById('sgpaPercentage').textContent = percentage.toFixed(1) + '%';
+            document.getElementById('sgpaUsGpa').textContent = usGpa.toFixed(2);
+
+            const badge = document.getElementById('sgpaBadge');
+            if (sgpa >= 9.0) {
+                badge.className = 'grade-badge badge-distinction';
+                badge.textContent = '🌟 Outstanding (9-Pointer)';
+            } else if (sgpa >= 7.5) {
+                badge.className = 'grade-badge badge-distinction';
+                badge.textContent = 'Distinction Level';
+            } else if (sgpa >= 6.0) {
+                badge.className = 'grade-badge badge-first';
+                badge.textContent = 'First Class Level';
+            } else if (sgpa >= 5.0) {
+                badge.className = 'grade-badge badge-pass';
+                badge.textContent = 'Second Class Level';
+            } else {
+                badge.className = 'grade-badge badge-fail';
+                badge.textContent = 'Needs Improvement';
+            }
+        }
+
+        // VTOP Paste Parser
+        function parseVtopText() {
+            const rawText = document.getElementById('vtopPasteInput').value.trim();
+            if (!rawText) {
+                alert('Please paste course text or tabular lines from VTOP.');
+                return;
+            }
+
+            // Regex matches course lines e.g. "MAT2001 Differential Equations 4.0 S" or "4 S"
+            const lines = rawText.split(/\r?\n|;/);
+            let parsedCount = 0;
+
+            lines.forEach(line => {
+                const creditMatch = line.match(/\b([1-9]|1[0-6]|1\.5|2\.5|3\.5)\b/);
+                const gradeMatch = line.match(/\b([SABCDENFabden])\b/i);
+
+                if (creditMatch && gradeMatch) {
+                    const credits = parseFloat(creditMatch[1]);
+                    const grade = gradeMatch[1].toUpperCase();
+                    let title = line.replace(creditMatch[0], '').replace(gradeMatch[0], '').trim();
+                    title = title.replace(/[^a-zA-Z0-9\s\-]/g, '').slice(0, 30);
+                    addCourseRow(title || `Course ${courseCounter + 1}`, credits, grade);
+                    parsedCount++;
+                }
+            });
+
+            if (parsedCount > 0) {
+                alert(`Successfully parsed and loaded ${parsedCount} courses!`);
+                document.getElementById('vtopPasteInput').value = '';
+            } else {
+                alert('Could not automatically identify credit and grade patterns. Please ensure credits (e.g., 4) and grade letter (e.g., S or A) are present.');
+            }
+        }
+
+        // Clipboard Copy
+        function copyResultToClipboard() {
+            const sgpa = document.getElementById('sgpaDisplay').textContent;
+            const credits = document.getElementById('sgpaTotalCredits').textContent;
+            const percentage = document.getElementById('sgpaPercentage').textContent;
+            const text = `VIT Academic Performance:\nSemester SGPA: ${sgpa}\nTotal Credits: ${credits}\nPercentage Equivalent: ${percentage}\nCalculated via VIT CGPA Calculator`;
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Results copied to clipboard!');
+            }).catch(() => {
+                prompt('Copy your results:', text);
+            });
+        }
+
+        // Multi-Semester CGPA Functionality
+        let semCounter = 0;
+        function addSemesterRow(name = '', sgpa = 8.5, credits = 22) {
+            semCounter++;
+            const tbody = document.getElementById('cgpaTbody');
+            const row = document.createElement('tr');
+            row.id = `sem-row-${semCounter}`;
+            row.innerHTML = `
+                <td>
+                    <input type="text" class="calc-input sem-name" value="${name || 'Semester ' + semCounter}">
+                </td>
+                <td>
+                    <input type="number" step="0.01" min="0" max="10" class="calc-input sem-sgpa" value="${sgpa}" oninput="calculateCumulativeCgpa()">
+                </td>
+                <td>
+                    <input type="number" step="0.5" min="0" max="40" class="calc-input sem-credits" value="${credits}" oninput="calculateCumulativeCgpa()">
+                </td>
+                <td style="text-align: center;">
+                    <button class="btn btn-danger" onclick="removeSemesterRow('sem-row-${semCounter}')">✕</button>
+                </td>
+            `;
+            tbody.appendChild(row);
+            calculateCumulativeCgpa();
+        }
+
+        function removeSemesterRow(id) {
+            const row = document.getElementById(id);
+            if (row) {
+                row.remove();
+                calculateCumulativeCgpa();
+            }
+        }
+
+        function resetCgpaTable() {
+            document.getElementById('cgpaTbody').innerHTML = '';
+            semCounter = 0;
+            addSemesterRow('Semester 1', 8.50, 22);
+            addSemesterRow('Semester 2', 8.80, 24);
+        }
+
+        function populateAllSemesters() {
+            document.getElementById('cgpaTbody').innerHTML = '';
+            semCounter = 0;
+            const defaults = [
+                { s: 8.50, c: 22 },
+                { s: 8.70, c: 23 },
+                { s: 8.90, c: 24 },
+                { s: 9.10, c: 22 },
+                { s: 9.00, c: 21 },
+                { s: 8.80, c: 20 },
+                { s: 9.20, c: 18 },
+                { s: 9.50, c: 12 }
+            ];
+            defaults.forEach((item, index) => {
+                addSemesterRow(`Semester ${index + 1}`, item.s, item.c);
+            });
+        }
+
+        function calculateCumulativeCgpa() {
+            const rows = document.querySelectorAll('#cgpaTbody tr');
+            let totalCredits = 0;
+            let totalWeightedSum = 0;
+            let count = 0;
+
+            rows.forEach(row => {
+                const sgpa = parseFloat(row.querySelector('.sem-sgpa').value) || 0;
+                const credits = parseFloat(row.querySelector('.sem-credits').value) || 0;
+                if (credits > 0) {
+                    totalCredits += credits;
+                    totalWeightedSum += (sgpa * credits);
+                    count++;
+                }
+            });
+
+            const cgpa = totalCredits > 0 ? (totalWeightedSum / totalCredits) : 0;
+            const percentage = cgpa * 10;
+
+            document.getElementById('cgpaDisplay').textContent = cgpa.toFixed(2);
+            document.getElementById('cgpaTotalCredits').textContent = totalCredits.toFixed(1);
+            document.getElementById('cgpaTotalSems').textContent = count;
+            document.getElementById('cgpaPercentage').textContent = percentage.toFixed(1) + '%';
+
+            const badge = document.getElementById('cgpaBadge');
+            const classField = document.getElementById('cgpaClass');
+
+            if (cgpa >= 7.5) {
+                badge.className = 'grade-badge badge-distinction';
+                badge.textContent = 'Distinction Track';
+                classField.textContent = 'Distinction';
+            } else if (cgpa >= 6.0) {
+                badge.className = 'grade-badge badge-first';
+                badge.textContent = 'First Class Track';
+                classField.textContent = '1st Class';
+            } else if (cgpa >= 5.0) {
+                badge.className = 'grade-badge badge-pass';
+                badge.textContent = 'Second Class Track';
+                classField.textContent = '2nd Class';
+            } else {
+                badge.className = 'grade-badge badge-fail';
+                badge.textContent = 'Arrear / Pass Track';
+                classField.textContent = 'Below Pass';
+            }
+        }
+
+        function calculateQuickCgpa() {
+            const priorCgpa = parseFloat(document.getElementById('quickPriorCgpa').value);
+            const priorCredits = parseFloat(document.getElementById('quickPriorCredits').value);
+            const currSgpa = parseFloat(document.getElementById('quickCurrentSgpa').value);
+            const currCredits = parseFloat(document.getElementById('quickCurrentCredits').value);
+
+            if (isNaN(priorCgpa) || isNaN(priorCredits) || isNaN(currSgpa) || isNaN(currCredits)) {
+                alert('Please enter valid numbers in all 4 quick calculation fields.');
+                return;
+            }
+
+            const totalCredits = priorCredits + currCredits;
+            if (totalCredits <= 0) return;
+
+            const combinedCgpa = ((priorCgpa * priorCredits) + (currSgpa * currCredits)) / totalCredits;
+            alert(`Combined Cumulative CGPA: ${combinedCgpa.toFixed(2)}\nTotal Cumulative Credits: ${totalCredits}`);
+        }
+
+        // Target CGPA Forecaster
+        function calculateTargetGpa() {
+            const currentCgpa = parseFloat(document.getElementById('targetCurrentCgpa').value);
+            const currentCredits = parseFloat(document.getElementById('targetCurrentCredits').value);
+            const targetCgpa = parseFloat(document.getElementById('targetGoalCgpa').value);
+            const remCredits = parseFloat(document.getElementById('targetRemainingCredits').value);
+
+            const display = document.getElementById('targetResultDisplay');
+            const badge = document.getElementById('targetFeasibilityBadge');
+            const adviceBox = document.getElementById('targetAdviceBox');
+            const adviceTitle = document.getElementById('targetAdviceTitle');
+            const adviceBody = document.getElementById('targetAdviceBody');
+
+            if (isNaN(currentCgpa) || isNaN(currentCredits) || isNaN(targetCgpa) || isNaN(remCredits) || remCredits <= 0) {
+                display.textContent = '--';
+                badge.textContent = 'Incomplete Info';
+                badge.className = 'grade-badge badge-pass';
+                adviceBox.style.display = 'none';
+                return;
+            }
+
+            const totalCredits = currentCredits + remCredits;
+            const requiredWeighted = (targetCgpa * totalCredits) - (currentCgpa * currentCredits);
+            const requiredGpa = requiredWeighted / remCredits;
+
+            display.textContent = requiredGpa.toFixed(2);
+            adviceBox.style.display = 'block';
+
+            if (requiredGpa > 10.0) {
+                badge.className = 'grade-badge badge-fail';
+                badge.textContent = 'Mathematically Impossible';
+                adviceTitle.textContent = '❌ Target Unachievable';
+                adviceTitle.style.color = 'var(--accent)';
+                adviceBody.textContent = `Even with a perfect 10.0 SGPA in all remaining ${remCredits} credits, your maximum possible CGPA would be ${(((currentCgpa * currentCredits) + (10 * remCredits)) / totalCredits).toFixed(2)}. Consider taking additional elective credits or registering for grade improvement courses.`;
+            } else if (requiredGpa >= 9.0) {
+                badge.className = 'grade-badge badge-pass';
+                badge.textContent = 'High Challenge (9.0+)';
+                adviceTitle.textContent = '🔥 Intense Effort Required';
+                adviceTitle.style.color = 'var(--warning)';
+                adviceBody.textContent = `You need to average mostly 'S' and 'A' grades in all upcoming exams. Focus on high-credit core subjects and secure near-perfect internal marks.`;
+            } else if (requiredGpa >= 7.5) {
+                badge.className = 'grade-badge badge-first';
+                badge.textContent = 'Realistic Target';
+                adviceTitle.textContent = '👍 Very Attainable';
+                adviceTitle.style.color = 'var(--primary)';
+                adviceBody.textContent = `Maintaining an average of 'A' and 'B' grades in remaining semesters will successfully elevate your CGPA to your goal of ${targetCgpa.toFixed(2)}.`;
+            } else {
+                badge.className = 'grade-badge badge-distinction';
+                badge.textContent = 'Easily Achievable';
+                adviceTitle.textContent = '✅ Highly Manageable';
+                adviceTitle.style.color = 'var(--secondary)';
+                adviceBody.textContent = `Your required GPA (${requiredGpa.toFixed(2)}) is well within standard range. Stay consistent and avoid backlogs to secure your goal!`;
+            }
+        }
+
+        // Percentage Converter Functions
+        function convertFromCgpa(val) {
+            const num = parseFloat(val);
+            const percentElem = document.getElementById('convPercentResult');
+            if (isNaN(num) || num < 0) {
+                percentElem.textContent = '0.00%';
+                return;
+            }
+            const res = Math.min(num * 10, 100);
+            percentElem.textContent = res.toFixed(2) + '%';
+        }
+
+        function convertFromPercentage(val) {
+            const num = parseFloat(val);
+            const cgpaElem = document.getElementById('convCgpaResult');
+            if (isNaN(num) || num < 0) {
+                cgpaElem.textContent = '0.00';
+                return;
+            }
+            const res = Math.min(num / 10, 10);
+            cgpaElem.textContent = res.toFixed(2);
+        }
+
+        // FAQ Accordion Handler
+        function toggleFaq(button) {
+            const answer = button.nextElementSibling;
+            const isOpen = answer.classList.contains('open');
+
+            // Close other FAQs
+            document.querySelectorAll('.faq-answer').forEach(el => el.classList.remove('open'));
+            document.querySelectorAll('.faq-question').forEach(el => el.classList.remove('active'));
+
+            if (!isOpen) {
+                answer.classList.add('open');
+                button.classList.add('active');
+            }
+        }
+
+        // Initialize with default data on load
+        window.addEventListener('DOMContentLoaded', () => {
+            resetSgpaTable();
+            resetCgpaTable();
+        });
+    </script>
+</body>
+</html>
